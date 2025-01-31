@@ -5,7 +5,7 @@ Webpack/EJS demo project.
 
 ```bash
 npm init
-``
+```
 
 ---
 
