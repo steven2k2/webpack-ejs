@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import "bootstrap/scss/bootstrap";
 
-$primary-color: #4CAF50;
+$primary-color: red;
 
 body {
-  background-color: $primary-color;
+  background-color: #779A5A !important;
 }
 
+// Import All of Bootstrap's CSS
+@import "bootstrap";
