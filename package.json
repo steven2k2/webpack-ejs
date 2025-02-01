@@ -8,12 +8,13 @@
     "@babel/preset-env": "^7.26.7",
     "babel-loader": "^9.2.1",
     "css-loader": "^7.1.2",
-    "ejs-loader": "^0.5.0",
+    "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.3",
     "sass": "~1.64.2",
     "sass-loader": "^16.0.4",
     "standard": "^17.1.2",
     "style-loader": "^4.0.0",
+    "template-ejs-loader": "^0.9.4",
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1"
   },
@@ -27,8 +28,8 @@
     "type": "git",
     "url": "git+https://github.com/steven2k2/webpack-ejs.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["Webpack","EJS"],
+  "author": "Steven Thompson",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/steven2k2/webpack-ejs/issues"

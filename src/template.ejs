@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <% const meta = require('./index-meta.js') %>
 </head>
-<body class="container">
+<body class="container bg-secondary-subtle">
 <main role="main">
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron mt-5 mb-5">
+    <div class="jumbotron mt-5 mb-5 text-light">
         <div class="container">
-            <h1 class="display-3">Single page EJS + Webpack Site</h1>
-            <p class="lead">{{{description}}}</p>
+            <h1 class="display-3"><%= meta.title %></h1>
+            <p class="lead"><%- meta.description %></p>
         </div>
     </div>
 
     <div class="container">
         <div class="row g-4">
             <div class="col-md-3 d-flex flex-column">
-                <h2>Webpack <span class="text-info">{{versions.webpack}}</span></h2>
+                <h2>Webpack <span class="text-info">versions.webpack</span></h2>
                 <p class="lead flex-grow-1">
                     A powerful module bundler that optimises JavaScript, CSS, and assets for both development and production environments. It enables modular development and efficient builds.
                 </p>
@@ -36,9 +36,9 @@
                 </p>
             </div>
             <div class="col-md-3 d-flex flex-column">
-                <h2>Handlebars</h2>
+                <h2>EJS</h2>
                 <p class="lead flex-grow-1">
-                    A lightweight templating engine for creating dynamic, reusable HTML templates with placeholders for data. It simplifies template logic and encourages modularity.
+                    EJS (<span class="fw-bold">Embedded JavaScript</span>) is a lightweight templating engine for creating <span class="fw-bold">dynamic, reusable HTML templates</span> with JavaScript. It allows embedding logic and placeholders for data, simplifying template rendering while encouraging <span class="fw-bold">modularity and maintainability</span>.
                 </p>
                 <p>
                     <a
@@ -70,7 +70,7 @@
                 </p>
             </div>
             <div class="col-md-3 d-flex flex-column">
-                <h2>Bootstrap <span class="text-info">{{versions.bootstrap}}</span></h2>
+                <h2>Bootstrap <span class="text-info">versions.bootstrap</span></h2>
                 <p class="lead flex-grow-1">
                     A responsive, mobile-first CSS framework that provides pre-styled components and utility classes, allowing developers to build consistent and beautiful UIs quickly.
                 </p>

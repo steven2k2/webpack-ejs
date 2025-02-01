@@ -1,10 +1,36 @@
-@import "bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-$primary-color: red;
+// scss/styles.scss
+/* SCSS HEX */
+/* SCSS HEX */
+$caramel: #C27C4C;
+$tan: #E1B88A;
+$black-bean: #2F120D;
+$rich-black: #0A0C12;
+$rich-black-2: #0F151B;
+
+
+$dark-spring-green: #3B6C3Cff;
+$asparagus: #779A5Aff;
+$honeydew: #DAE9D4ff;
+$eerie-black: #0F1F19ff;
+$celadon: #BBD3B4ff;
+
+
+// Override Bootstrap Theme Colors
+$primary: $dark-spring-green; // Body
+$secondary: $asparagus;
+
+//606
+$font-family-sans-serif:   "Raleway", serif;
+
+//654
+$headings-font-family:  "Permanent Marker", serif;
 
 body {
-  background-color: #779A5A !important;
+  background-color: $honeydew;
 }
 
 // Import All of Bootstrap's CSS
 @import "bootstrap";
+
